@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 class BlogController extends Controller
 {
     private $blog_repository;
+
     private $user;
 
     private $archive;

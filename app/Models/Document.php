@@ -11,12 +11,14 @@ class Document extends Model
     use HasFactory;
 
     protected $primaryKey ='id';
+
     protected $table = 'documents';
 
     protected $fillable = [
         'title',
         'description',
         'start_publish',
+        'content',
         'end_publish',
         'updated_at',
         'created_at'
@@ -58,4 +60,5 @@ class Document extends Model
             'type_document_id','id'
         );
     }
+
 }

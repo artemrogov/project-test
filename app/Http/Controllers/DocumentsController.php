@@ -16,14 +16,15 @@ class DocumentsController extends Controller
     {
         $nameDocument = Carbon::now()->format('d_m_Y_h_i_s');
         $format = '.json';
+
         $path_docs = 'exports/documents/';
+
         $fullNameResultFile = $path_docs.$nameDocument.$format;
 
         Storage::disk('public')
             ->put("{$fullNameResultFile}",
             json_encode($export->getListDocumentTable())
         );
-
 
         return Storage::disk('public')->download($fullNameResultFile);
     }
@@ -40,6 +41,5 @@ class DocumentsController extends Controller
         $data = $documents->get();
         return view('documents',compact('data'));
     }
-
 
 }
