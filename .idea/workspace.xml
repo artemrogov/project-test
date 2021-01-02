@@ -14,9 +14,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb742edf-927e-4eba-9cd9-8e9558c1c33b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/document_mail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/documents/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/documents/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/SendUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/SendUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/TestSendMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/TestSendMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +197,17 @@
       <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
+      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/vendor/jenssegers/agent" />
+      <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
+      <path value="$PROJECT_DIR$/vendor/laravel/jetstream" />
+      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iQDYneiB1n94hNV9tNDjXdNOyY" />
@@ -266,7 +297,15 @@
       <workItem from="1609530200848" duration="1796000" />
       <workItem from="1609592136881" duration="355000" />
       <workItem from="1609596870664" duration="1797000" />
-      <workItem from="1609598721064" duration="845000" />
+      <workItem from="1609598721064" duration="1799000" />
+      <workItem from="1609603586103" duration="1797000" />
+      <workItem from="1609605437305" duration="1819000" />
+      <workItem from="1609607314908" duration="2300000" />
+      <workItem from="1609609662328" duration="1477000" />
+      <workItem from="1609611466712" duration="1808000" />
+      <workItem from="1609613296226" duration="975000" />
+      <workItem from="1609616661335" duration="1796000" />
+      <workItem from="1609618609855" duration="869000" />
     </task>
     <servers />
   </component>
@@ -314,10 +353,10 @@
       <screen x="72" y="27" width="1208" height="997" />
     </state>
     <state x="114" y="198" width="958" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1208.997@72.27.1208.997" timestamp="1601833041367" />
-    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1604790845113">
+    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1609610009348">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
-    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1208.997@72.27.1208.997" timestamp="1604790845113" />
+    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1208.997@72.27.1208.997" timestamp="1609610009348" />
     <state x="409" y="283" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609531392914">
       <screen x="72" y="27" width="1208" height="997" />
     </state>

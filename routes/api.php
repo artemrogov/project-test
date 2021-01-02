@@ -8,7 +8,7 @@ use OpenStack\ObjectStore\v1\Models\StorageObject;
 use GuzzleHttp\Psr7\Stream;
 
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 

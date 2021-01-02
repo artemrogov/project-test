@@ -32,3 +32,22 @@ Route::get('/import-documents',[\App\Http\Controllers\DocumentsController::class
 Route::get('/documents',[\App\Http\Controllers\DocumentsController::class,'getDocuments']);
 
 //getDocuments
+
+// test mail send visualization
+
+Route::get('/test-send-mail',function(){
+   return  new \App\Mail\SendUsers('test browser!');
+});
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
+
+Route::resource('/documents',AdminDocumentsController::class);
+
+
+Route::get('/test-form',function()
+{
+    return view('livewire.document-view');
+});
