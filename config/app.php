@@ -1,4 +1,9 @@
 <?php
+use App\Providers\ArchiveProvider;
+use App\Providers\ExportDocuments;
+use App\Providers\FilesCloudProvider;
+use App\Providers\HelloWorldServiceProvider;
+use App\Providers\MathematicProvider;
 
 return [
 
@@ -67,7 +72,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Moscow',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +85,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ru',
 
     /*
     |--------------------------------------------------------------------------
@@ -173,8 +178,28 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        App\Providers\HorizonServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        //repositories blog
+        App\Providers\BlogRepositoryProvider::class,
+
+
+        FilesCloudProvider::class,
+
+        //my learn facades
+
+        HelloWorldServiceProvider::class,
+
+        MathematicProvider::class,
+
+        //export documents
+        ExportDocuments::class,
+
+        ZanySoft\Zip\ZipServiceProvider::class,
+
+        ArchiveProvider::class
     ],
 
     /*
@@ -227,6 +252,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+
+        'MyFacade'=>\App\MyFacades\MyStrFacade::class,
+        'Math'=>\App\MyFacades\Math::class,
+
+        'Zip' => ZanySoft\Zip\ZipFacade::class,
     ],
 
 ];
