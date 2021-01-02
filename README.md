@@ -19,3 +19,5 @@ https://github.com/Ne-Lexa/php-zip#Documentation-ZipFile-saveAsFile
 8) Генерация PDF 
 
 9) Конвектор изображений из png в jpg
+
+10) Уведомления и почта, а также очереди отправки уведомлений и почты

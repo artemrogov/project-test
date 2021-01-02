@@ -14,38 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb742edf-927e-4eba-9cd9-8e9558c1c33b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Contracts/ExportContractInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MyClass/HelloWorld.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MyClass/Mathematic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MyFacades/Math.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MyFacades/MyStrFacade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/RepositoryBlog/BlogRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/RepositoryBlog/BlogRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/RepositoryFiles/FileStorageInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/RepositoryFiles/FilesRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Archive.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/ArchiveInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/JsonDocument.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/documents.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/test.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203/storage_v2/_src_/database/test1.302SBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203/storage_v2/_src_/database/test1.302SBg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/SendUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/SendUsers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +265,8 @@
       <workItem from="1609525343600" duration="1795000" />
       <workItem from="1609530200848" duration="1796000" />
       <workItem from="1609592136881" duration="355000" />
-      <workItem from="1609596870664" duration="353000" />
+      <workItem from="1609596870664" duration="1797000" />
+      <workItem from="1609598721064" duration="845000" />
     </task>
     <servers />
   </component>
