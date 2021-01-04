@@ -1,5 +1,6 @@
 <?php
 use App\Providers\ArchiveProvider;
+use App\Providers\DocumentsServiceProvider;
 use App\Providers\ExportDocuments;
 use App\Providers\FilesCloudProvider;
 use App\Providers\HelloWorldServiceProvider;
@@ -199,7 +200,9 @@ return [
 
         ZanySoft\Zip\ZipServiceProvider::class,
 
-        ArchiveProvider::class
+        ArchiveProvider::class,
+
+        DocumentsServiceProvider::class
     ],
 
     /*

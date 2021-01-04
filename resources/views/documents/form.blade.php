@@ -28,6 +28,10 @@
         <textarea class="form-control" id="textarea-input" name="content" rows="9" placeholder="Content..">{{old('content',$document->content ?? '')}}</textarea>
     </div>
 </div>
+<div class="form-check form-check-inline mr-1">
+    <input class="form-check-input" id="inline-checkbox1" type="checkbox" name="active" value="1" {{old('active',$document->active  ?? '') == "1" ? 'checked' : ''}} >
+    <label class="form-check-label" for="inline-checkbox1">Активировать</label>
+</div>
 <div class="form-group row">
     <label class="col-md-3 col-form-label" for="select1">Тип документа</label>
     <div class="col-md-9">

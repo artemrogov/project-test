@@ -21,3 +21,5 @@ Route::get('/home',
 
 Route::resource('/documents',Admin\DocumentsController::class);
 
+Route::get('/documents-page',[\App\Http\Controllers\DocumentsController::class,'getPageDocumentsList'])
+    ->name('page.documents');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Contracts\DocumentInterface;
 use App\Contracts\ExportContractInterface;
 use App\Models\Document;
 use Carbon\Carbon;
@@ -9,8 +10,30 @@ use Faker\Provider\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
+
 class DocumentsController extends Controller
 {
+
+    private $document;
+
+    /**
+     * DocumentsController constructor.
+     * @param $document
+     */
+    public function __construct(DocumentInterface $document)
+    {
+        $this->document = $document;
+    }
+
+
+
+     public function getPageDocumentsList()
+     {
+
+         $documents = is_null(\request('q')) ? $this->document->getDocumentsList() : $this->document->search(\request('q'));
+         return view('documents_list',compact('documents'));
+     }
+
 
     public function getParseDocument(ExportContractInterface $export)
     {
@@ -41,5 +64,6 @@ class DocumentsController extends Controller
         $data = $documents->get();
         return view('documents',compact('data'));
     }
+
 
 }

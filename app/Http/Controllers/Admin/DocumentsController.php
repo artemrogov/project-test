@@ -28,6 +28,7 @@ class DocumentsController extends Controller
     public function index()
     {
         $documents = $this->document->paginate(10);
+
         return view('documents.index',compact('documents'));
     }
 
@@ -57,8 +58,13 @@ class DocumentsController extends Controller
     }
 
 
+    /**
+     * @param $requestData
+     * @return array
+     */
     protected function formDataInputs($requestData):array
     {
+
         $data = array();
 
         if($requestData->has('title')){
@@ -73,8 +79,9 @@ class DocumentsController extends Controller
             $data['content'] = $requestData->input('content');
         }
 
-        return $data;
+        $data['active'] = $requestData->input('active') === "1";
 
+        return $data;
     }
 
     /**
@@ -112,6 +119,7 @@ class DocumentsController extends Controller
         $document = $this->document->findOrFail($id);
         $data = $this->formDataInputs($request);
         $document->update($data);
+
         return redirect()->back()->with('status','Обновлен текущий документ');
 
     }

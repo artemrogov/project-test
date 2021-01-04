@@ -2,13 +2,15 @@
 
 namespace App\Models;
 
+use App\Contracts\Searchable;
+
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Document extends Model
 {
-    use HasFactory;
+    use HasFactory,Searchable;
 
     protected $primaryKey ='id';
 
@@ -19,6 +21,7 @@ class Document extends Model
         'description',
         'start_publish',
         'content',
+        'active',
         'end_publish',
         'updated_at',
         'created_at'
@@ -35,6 +38,7 @@ class Document extends Model
         return $query
             ->where('start_publish', '<=', Carbon::now()->format('Y-m-d H:i:s'))
             ->where('end_publish', '>', Carbon::now()->format('Y-m-d H:i:s'))
+            ->where('active','=',true)
             ->orWhere([
                 ['end_publish','=',null],
                 ['start_publish','<=',Carbon::now()->format('Y-m-d H:i:s')]

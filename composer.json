@@ -14,6 +14,7 @@
         "ext-zip": "*",
         "barryvdh/laravel-dompdf": "^0.8.7",
         "cboden/ratchet": "^0.4.3",
+        "elasticsearch/elasticsearch": "^7.10",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",

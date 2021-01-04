@@ -14,24 +14,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb742edf-927e-4eba-9cd9-8e9558c1c33b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/documents/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/documents/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/documents/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/documents/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Contracts/DocumentInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Contracts/Searchable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DocumentsRepository/DocumentsRepositories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DocumentsRepository/ElasticsearchRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/documents_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203/storage_v2/_src_/database/test1.302SBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203/storage_v2/_src_/database/test1.302SBg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DocumentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DocumentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DocumentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DocumentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Document.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/users.zip" beforeDir="false" afterPath="$PROJECT_DIR$/public/users.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/documents/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +196,9 @@
       <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/ezimuel/guzzlestreams" />
+      <path value="$PROJECT_DIR$/vendor/ezimuel/ringphp" />
+      <path value="$PROJECT_DIR$/vendor/elasticsearch/elasticsearch" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iQDYneiB1n94hNV9tNDjXdNOyY" />
@@ -286,7 +292,16 @@
       <workItem from="1609622884988" duration="1763000" />
       <workItem from="1609624664912" duration="1761000" />
       <workItem from="1609626486061" duration="1810000" />
-      <workItem from="1609628318348" duration="245000" />
+      <workItem from="1609628318348" duration="1013000" />
+      <workItem from="1609701278204" duration="1797000" />
+      <workItem from="1609703093333" duration="2998000" />
+      <workItem from="1609706108059" duration="1797000" />
+      <workItem from="1609707920901" duration="1795000" />
+      <workItem from="1609793527838" duration="1774000" />
+      <workItem from="1609795354013" duration="1771000" />
+      <workItem from="1609797193768" duration="1752000" />
+      <workItem from="1609798965580" duration="2094000" />
+      <workItem from="1609801185352" duration="401000" />
     </task>
     <servers />
   </component>
@@ -334,10 +349,10 @@
       <screen x="72" y="27" width="1208" height="997" />
     </state>
     <state x="114" y="198" width="958" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1208.997@72.27.1208.997" timestamp="1601833041367" />
-    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1604790845113">
+    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1609799179420">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
-    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1208.997@72.27.1208.997" timestamp="1604790845113" />
+    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1208.997@72.27.1208.997" timestamp="1609799179420" />
     <state x="409" y="283" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609531392914">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
@@ -370,10 +385,10 @@
       <screen x="72" y="27" width="1208" height="997" />
     </state>
     <state width="792" height="257" key="GridCell.Tab.0.right/72.27.1208.997@72.27.1208.997" timestamp="1608934994153" />
-    <state x="401" y="406" width="601" height="568" key="NewPhpClassDialog" timestamp="1604790818408">
+    <state x="401" y="406" width="633" height="568" key="NewPhpClassDialog" timestamp="1609799116728">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
-    <state x="401" y="406" width="601" height="568" key="NewPhpClassDialog/72.27.1208.997@72.27.1208.997" timestamp="1604790818408" />
+    <state x="401" y="406" width="633" height="568" key="NewPhpClassDialog/72.27.1208.997@72.27.1208.997" timestamp="1609799116728" />
     <state x="471" y="451" width="399" height="156" key="NewPhpFileDialog" timestamp="1604690139954">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
@@ -394,10 +409,10 @@
       <screen x="72" y="27" width="1208" height="997" />
     </state>
     <state x="541" y="415" width="352" height="228" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/72.27.1208.997@72.27.1208.997" timestamp="1604856745223" />
-    <state x="527" y="196" width="556" height="665" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1609626513952">
+    <state x="527" y="196" width="556" height="665" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1609701556628">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
-    <state x="527" y="196" width="556" height="665" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/72.27.1208.997@72.27.1208.997" timestamp="1609626513952" />
+    <state x="527" y="196" width="556" height="665" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/72.27.1208.997@72.27.1208.997" timestamp="1609701556628" />
     <state x="572" y="242" width="187" height="580" key="ftp.server.browser" timestamp="1603747581237">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
