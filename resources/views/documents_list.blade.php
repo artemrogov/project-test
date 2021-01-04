@@ -20,8 +20,8 @@
             </form>
             @forelse ($documents as $document)
             <article class="mb-3">
-                <h2>{{ $document->title }}</h2>
-                <p class="m-0">{{ $document->content }}</p>
+                <h2><a href="#">{{ $document->title }}</a></h2>
+                <p class="m-0">{{ \Illuminate\Support\Str::limit($document->content,50,'<..>') }}</p>
             </article>
             @empty
                  <p>Нет документов</p>
