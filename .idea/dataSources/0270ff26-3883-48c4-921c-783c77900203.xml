@@ -1074,6 +1074,7 @@ sequence|table|36596|36598|4
     </table>
     <table id="56" parent="31" name="documents">
       <ObjectId>28443</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>test1</Owner>
       <StateNumber>30499</StateNumber>
     </table>

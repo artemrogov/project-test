@@ -34,7 +34,8 @@ class ElasticsearchRepository implements DocumentInterface
         return Document::documentsPublishDeferred()->get();
     }
 
-    private function searchOnElasticsearch(string $query = ''):array {
+    private function searchOnElasticsearch(string $query = ''):array
+    {
         $model = new Document();
         return $this->elasticsearch->search([
                     'index'=>$model->getSearchIndex(),

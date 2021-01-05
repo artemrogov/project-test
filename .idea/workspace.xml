@@ -14,9 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb742edf-927e-4eba-9cd9-8e9558c1c33b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Casts/CustomeCastAttributes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Casts/DateCasting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DocumentsRepository/ElasticsearchRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DocumentsRepository/ElasticsearchRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DocumentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DocumentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Document.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/documents_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +290,15 @@
       <workItem from="1609795354013" duration="1771000" />
       <workItem from="1609797193768" duration="1752000" />
       <workItem from="1609798965580" duration="2094000" />
-      <workItem from="1609801185352" duration="826000" />
+      <workItem from="1609801185352" duration="1037000" />
+      <workItem from="1609846862997" duration="1724000" />
+      <workItem from="1609848706716" duration="1776000" />
+      <workItem from="1609850555460" duration="738000" />
+      <workItem from="1609865299296" duration="599000" />
+      <workItem from="1609868980617" duration="1793000" />
+      <workItem from="1609870841831" duration="1765000" />
+      <workItem from="1609872626377" duration="1190000" />
+      <workItem from="1609878611062" duration="473000" />
     </task>
     <servers />
   </component>
@@ -331,10 +346,10 @@
       <screen x="72" y="27" width="1208" height="997" />
     </state>
     <state x="114" y="198" width="958" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1208.997@72.27.1208.997" timestamp="1601833041367" />
-    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1609799179420">
+    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1609872145353">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
-    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1208.997@72.27.1208.997" timestamp="1609799179420" />
+    <state x="465" y="206" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1208.997@72.27.1208.997" timestamp="1609872145353" />
     <state x="409" y="283" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609531392914">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
@@ -367,10 +382,10 @@
       <screen x="72" y="27" width="1208" height="997" />
     </state>
     <state width="792" height="257" key="GridCell.Tab.0.right/72.27.1208.997@72.27.1208.997" timestamp="1608934994153" />
-    <state x="401" y="406" width="633" height="568" key="NewPhpClassDialog" timestamp="1609799116728">
+    <state x="401" y="406" width="633" height="568" key="NewPhpClassDialog" timestamp="1609872129079">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
-    <state x="401" y="406" width="633" height="568" key="NewPhpClassDialog/72.27.1208.997@72.27.1208.997" timestamp="1609799116728" />
+    <state x="401" y="406" width="633" height="568" key="NewPhpClassDialog/72.27.1208.997@72.27.1208.997" timestamp="1609872129079" />
     <state x="471" y="451" width="399" height="156" key="NewPhpFileDialog" timestamp="1604690139954">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
@@ -391,10 +406,10 @@
       <screen x="72" y="27" width="1208" height="997" />
     </state>
     <state x="541" y="415" width="352" height="228" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/72.27.1208.997@72.27.1208.997" timestamp="1604856745223" />
-    <state x="527" y="196" width="556" height="665" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1609701556628">
+    <state x="527" y="196" width="556" height="665" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1609848740275">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
-    <state x="527" y="196" width="556" height="665" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/72.27.1208.997@72.27.1208.997" timestamp="1609701556628" />
+    <state x="527" y="196" width="556" height="665" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/72.27.1208.997@72.27.1208.997" timestamp="1609848740275" />
     <state x="572" y="242" width="187" height="580" key="ftp.server.browser" timestamp="1603747581237">
       <screen x="72" y="27" width="1208" height="997" />
     </state>
