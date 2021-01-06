@@ -49,9 +49,14 @@ class User extends Authenticatable
         return 'email';
     }
 
-    public function files()
+    /**
+     * акссесор имя и почта пользователя
+     * вызов User::first()->email_name
+     * @return string
+     */
+    public function getEmailNameAttribute()
     {
-        return $this->hasMany(FileCloud::class,'user_id','id');
+        return "Name: {$this->name} Email: {$this->email}";
     }
 
 }

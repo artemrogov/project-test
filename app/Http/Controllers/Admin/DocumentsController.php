@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\DocumentRequest;
 use App\Models\Document;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 
 class DocumentsController extends Controller
 {
@@ -79,6 +81,14 @@ class DocumentsController extends Controller
             $data['content'] = $requestData->input('content');
         }
 
+        if($requestData->has('start_publish')){
+            $data['start_publish'] = $requestData->input('start_publish');
+        }
+
+        if($requestData->has('end_publish')){
+            $data['end_publish'] = $requestData->input('end_publish');
+        }
+
         $data['active'] = $requestData->input('active') === "1";
 
         return $data;
@@ -117,7 +127,9 @@ class DocumentsController extends Controller
     public function update(DocumentRequest $request, $id)
     {
         $document = $this->document->findOrFail($id);
+
         $data = $this->formDataInputs($request);
+
         $document->update($data);
 
         return redirect()->back()->with('status','Обновлен текущий документ');

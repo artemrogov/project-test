@@ -14,16 +14,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb742edf-927e-4eba-9cd9-8e9558c1c33b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Casts/CustomeCastAttributes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Casts/DateCasting.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0270ff26-3883-48c4-921c-783c77900203.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DocumentsRepository/ElasticsearchRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DocumentsRepository/ElasticsearchRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DocumentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DocumentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DocumentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DocumentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Document.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/documents_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/documents/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/documents/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/documents/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +195,9 @@
       <path value="$PROJECT_DIR$/vendor/ezimuel/guzzlestreams" />
       <path value="$PROJECT_DIR$/vendor/ezimuel/ringphp" />
       <path value="$PROJECT_DIR$/vendor/elasticsearch/elasticsearch" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iQDYneiB1n94hNV9tNDjXdNOyY" />
@@ -298,7 +308,19 @@
       <workItem from="1609868980617" duration="1793000" />
       <workItem from="1609870841831" duration="1765000" />
       <workItem from="1609872626377" duration="1190000" />
-      <workItem from="1609878611062" duration="473000" />
+      <workItem from="1609878611062" duration="1795000" />
+      <workItem from="1609880422671" duration="1788000" />
+      <workItem from="1609882873351" duration="1778000" />
+      <workItem from="1609884824064" duration="1793000" />
+      <workItem from="1609886635136" duration="1797000" />
+      <workItem from="1609930988453" duration="1775000" />
+      <workItem from="1609932814892" duration="1367000" />
+      <workItem from="1609934909465" duration="1742000" />
+      <workItem from="1609936671686" duration="4581000" />
+      <workItem from="1609941274928" duration="1796000" />
+      <workItem from="1609943088494" duration="1796000" />
+      <workItem from="1609944901721" duration="1795000" />
+      <workItem from="1609946779241" duration="353000" />
     </task>
     <servers />
   </component>
@@ -422,5 +444,9 @@
       <screen x="72" y="27" width="1208" height="997" />
     </state>
     <state x="339" y="245" width="672" height="678" key="search.everywhere.popup/72.27.1208.997@72.27.1208.997" timestamp="1608930606920" />
+    <state x="401" y="439" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1609937556384">
+      <screen x="72" y="27" width="1208" height="997" />
+    </state>
+    <state x="401" y="439" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1208.997@72.27.1208.997" timestamp="1609937556384" />
   </component>
 </project>

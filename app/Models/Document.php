@@ -9,6 +9,7 @@ use App\Contracts\Searchable;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Document extends Model
 {
@@ -18,9 +19,10 @@ class Document extends Model
 
     protected $table = 'documents';
 
+
     protected $casts = [
-        //'start_publish'=>DateCasting::class,
-        //'end_publish'=>DateCasting::class,
+        'start_publish'=>'datetime:Y-m-d H:i:s',
+        'end_publish'=>'datetime:Y-m-d H:i:s',
         'active'=>'boolean',
         'test_cast'=>CustomeCastAttributes::class
     ];
@@ -32,12 +34,25 @@ class Document extends Model
         'start_publish',
         'content',
         'active',
+        'author',
         'test_cast',
         'end_publish',
         'updated_at',
         'created_at'
     ];
 
+
+    public function getTitleAuthorAttribute()
+    {
+        return "Author document: {$this->author} Name document: {$this->title}";
+    }
+
+
+    public function setAuthorTitleAttribute($author)
+    {
+        $author = Str::slug(Str::lower($author));
+        $this->attributes['author'] = "{$author}@email_author.com";
+    }
 
 
     /**

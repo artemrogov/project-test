@@ -20,6 +20,7 @@
                             @endif
 
                             @method('PATCH')
+
                             @include('documents.form')
                     </div>
                     <div class="card-footer">
@@ -31,4 +32,14 @@
             </div>
         </div>
     </div>
+@endsection
+@section('scripts')
+    <script>
+        jQuery('#start_publish').datetimepicker({
+            format:'Y-m-d H:i',
+        });
+        jQuery('#end_publish').datetimepicker({
+            format:'Y-m-d H:i',
+        });
+    </script>
 @endsection

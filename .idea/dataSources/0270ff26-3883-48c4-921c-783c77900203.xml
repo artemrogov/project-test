@@ -1130,6 +1130,7 @@ sequence|table|36596|36598|4
     </table>
     <table id="67" parent="31" name="users">
       <ObjectId>16403</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>test1</Owner>
       <StateNumber>30256</StateNumber>
     </table>

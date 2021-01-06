@@ -13,13 +13,13 @@
 <div class="form-group row">
     <label class="col-md-3 col-form-label" for="date-input">Дата публикации</label>
     <div class="col-md-9">
-        <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date"><span class="help-block">Please enter a valid date</span>
+        <input class="form-control" id="start_publish" type="text" name="start_publish" value="{{old('start_publish',$document->start_publish ?? '')}}"><span class="help-block">Please enter a valid date</span>
     </div>
 </div>
 <div class="form-group row">
     <label class="col-md-3 col-form-label" for="date-input">Дата окончания публикации</label>
     <div class="col-md-9">
-        <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date"><span class="help-block">Please enter a valid date</span>
+        <input class="form-control" id="end_publish" type="text" name="end_publish" placeholder="date" value="{{old('end_publish',$document->end_publish ?? '')}}"><span class="help-block">Please enter a valid date</span>
     </div>
 </div>
 <div class="form-group row">
@@ -29,6 +29,7 @@
     </div>
 </div>
 <div class="form-check form-check-inline mr-1">
+    <input type="hidden" name="active" value="0"/>
     <input class="form-check-input" id="inline-checkbox1" type="checkbox" name="active" value="1" {{old('active',$document->active  ?? '') == "1" ? 'checked' : ''}} >
     <label class="form-check-label" for="inline-checkbox1">Активировать</label>
 </div>

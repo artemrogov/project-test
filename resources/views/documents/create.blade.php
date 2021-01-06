@@ -30,3 +30,15 @@
     </div>
     </div>
 @endsection
+@section('scripts')
+    <script>
+        jQuery('#start_publish').datetimepicker({
+            format:'Y-m-d H:i',
+            lang:'ru'
+        });
+        jQuery('#end_publish').datetimepicker({
+            format:'Y-m-d H:i',
+            lang:'ru'
+        });
+    </script>
+@endsection
