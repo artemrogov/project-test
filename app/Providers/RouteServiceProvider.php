@@ -60,6 +60,8 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace2)
                 ->group(base_path('routes/test.php'));
         });
+
+
     }
 
     /**
