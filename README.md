@@ -3,6 +3,7 @@
 # Изученные материалы 
 
 1) Библиотека для архивирования файлов
+
 https://github.com/Ne-Lexa/php-zip#Documentation-ZipFile-saveAsFile
 
 2) Сервис провайдер(контейнеры) фреймворка Laravel 
@@ -44,6 +45,21 @@ https://github.com/Ne-Lexa/php-zip#Documentation-ZipFile-saveAsFile
 18) Оповещения и email. Оповещение пользователей через Бд и почту.
 
 19) Сокеты broadcasting. Простой месседжер.
+
+##Команды для работы с архиватором
+
+#создать архив:
+
+ ```
+tar -cvf archive.tar.gz 
+
+```
+
+```
+curl -X PUT http://172.29.11.152:8080/v1/AUTH_47ee094a26b8437fab3f738fce82e2b4/users/$?extract-archive=tar -T backup.tar -H "Content-Type: application/x-tar" -H "X-Detect-Content-Type: true" 
+
+```
+
 
 
 

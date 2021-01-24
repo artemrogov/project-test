@@ -13,7 +13,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::apiResource('/documents',Api\Documents::class);
+Route::apiResource('/docs',Api\Documents::class);
 
 
 /**

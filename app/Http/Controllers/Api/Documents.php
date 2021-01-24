@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Document;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 
 class Documents extends Controller
 {
@@ -43,14 +44,22 @@ class Documents extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->json();
+        $dataArr = collect($data)->toArray();
+        $doc = $this->document->create($dataArr);
+        $created = $doc ? true : false;
+        return response()->json(['created'=>$created],201);
+    }
+
+
+    public function copyDocument(Request $request)
+    {
+
     }
 
     /**
@@ -84,7 +93,9 @@ class Documents extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = collect($request->json())->toArray();
+        $updatedDoc = $this->document->find($id)->update($data);
+        return response()->json(['updated'=>$updatedDoc],200);
     }
 
     /**
