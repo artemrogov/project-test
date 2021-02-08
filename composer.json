@@ -22,6 +22,7 @@
         "laravel/horizon": "^5.2",
         "laravel/passport": "^10.1",
         "laravel/tinker": "^2.0",
+        "mzur/laravel-openstack-swift": "^1.11",
         "nelexa/zip": "^3.3",
         "php-opencloud/openstack": "^3.1",
         "predis/predis": "^1.1",

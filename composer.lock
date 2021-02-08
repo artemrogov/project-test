@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "322797d643801258152b0e0edf01dbe8",
+    "content-hash": "dde139359b915e1dd6b8a0c450cdf5d1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -119,6 +119,47 @@
                 }
             ],
             "time": "2020-09-07T11:50:18+00:00"
+        },
+        {
+            "name": "biigle/laravel-cached-openstack",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/biigle/laravel-cached-openstack.git",
+                "reference": "7dc549a5ea90fbf0bc34737eccfa0ba32cdc0f44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/biigle/laravel-cached-openstack/zipball/7dc549a5ea90fbf0bc34737eccfa0ba32cdc0f44",
+                "reference": "7dc549a5ea90fbf0bc34737eccfa0ba32cdc0f44",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "^5.1|^6.0|^7.0|^8.0",
+                "php-opencloud/openstack": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Biigle\\CachedOpenStack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Zurowietz",
+                    "email": "martin@cebitec.uni-bielefeld.de"
+                }
+            ],
+            "description": "A wrapper for the OpenStack SDK that caches and renews the authentication token",
+            "support": {
+                "issues": "https://github.com/biigle/laravel-cached-openstack/issues",
+                "source": "https://github.com/biigle/laravel-cached-openstack/tree/v1.3.0"
+            },
+            "time": "2021-01-21T12:30:49+00:00"
         },
         {
             "name": "brick/math",
@@ -2563,6 +2604,56 @@
             "time": "2020-12-14T13:15:25+00:00"
         },
         {
+            "name": "mzur/laravel-openstack-swift",
+            "version": "v1.12.0-beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mzur/laravel-openstack-swift.git",
+                "reference": "a9bd508f55e76e3ccce21572bb5457d906e07618"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mzur/laravel-openstack-swift/zipball/a9bd508f55e76e3ccce21572bb5457d906e07618",
+                "reference": "a9bd508f55e76e3ccce21572bb5457d906e07618",
+                "shasum": ""
+            },
+            "require": {
+                "biigle/laravel-cached-openstack": "^1.0",
+                "illuminate/filesystem": "^5.1|^6.0|^7.0|^8.0",
+                "illuminate/support": "^5.1|^6.0|^7.0|^8.0",
+                "nimbusoft/flysystem-openstack-swift": "^0.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mzur\\Filesystem\\SwiftServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mzur\\Filesystem\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Zurowietz",
+                    "email": "martin@zurowietz.de"
+                }
+            ],
+            "description": "OpenStack Swift storage driver for Laravel/Lumen.",
+            "support": {
+                "issues": "https://github.com/mzur/laravel-openstack-swift/issues",
+                "source": "https://github.com/mzur/laravel-openstack-swift/tree/v1.12.0-beta"
+            },
+            "time": "2021-01-21T12:24:47+00:00"
+        },
+        {
             "name": "nelexa/zip",
             "version": "3.3.3",
             "source": {
@@ -2768,6 +2859,63 @@
                 "php"
             ],
             "time": "2020-12-20T10:01:03+00:00"
+        },
+        {
+            "name": "nimbusoft/flysystem-openstack-swift",
+            "version": "0.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chrisnharvey/flysystem-openstack-swift.git",
+                "reference": "41e3ea004b8366d9168ea3a4c0763d76ab55de64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chrisnharvey/flysystem-openstack-swift/zipball/41e3ea004b8366d9168ea3a4c0763d76ab55de64",
+                "reference": "41e3ea004b8366d9168ea3a4c0763d76ab55de64",
+                "shasum": ""
+            },
+            "require": {
+                "league/flysystem": "^1.0",
+                "php-opencloud/openstack": "^3.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6.4",
+                "mockery/mockery": "^1.3.1",
+                "phpunit/phpunit": "^5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nimbusoft\\Flysystem\\OpenStack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Harvey",
+                    "email": "chris@chrisnharvey.com"
+                }
+            ],
+            "description": "Flysystem adapter for OpenStack Swift",
+            "keywords": [
+                "Flysystem",
+                "Openstack",
+                "chrisnharvey",
+                "files",
+                "filesystem",
+                "filesystems",
+                "opencloud",
+                "storage",
+                "swift"
+            ],
+            "support": {
+                "issues": "https://github.com/chrisnharvey/flysystem-openstack-swift/issues",
+                "source": "https://github.com/chrisnharvey/flysystem-openstack-swift/tree/0.3.4"
+            },
+            "time": "2020-12-06T13:45:57+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -9640,5 +9788,5 @@
         "ext-zip": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }

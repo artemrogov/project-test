@@ -48,6 +48,7 @@ return [
             'root' => storage_path('app'),
         ],
 
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
@@ -63,6 +64,51 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
+        ],
+
+
+        'swift' => [
+            'driver' => 'swift',
+            'authUrl'   => env('OS_AUTH_URL', 'http://172.29.11.152:5000/v3'),
+            'region'    => env('OS_REGION_NAME', 'RegionOne'),
+            'user'      => env('OS_USERNAME', 'admin'),
+            'domain'    => env('OS_USER_DOMAIN_NAME', 'default'),
+            'password'  => env('OS_PASSWORD', 'xE777succ89-0'),
+            'container' => env('OS_CONTAINER_NAME', 'test_documents'),
+            'projectId'=>env('PROJECT_ID','47ee094a26b8437fab3f738fce82e2b4')
+        ],
+
+        'videomost' => [
+            'driver' => 'swift',
+            'authUrl'   => env('VOS_AUTH_URL', 'http://172.29.11.152:5000/v3'),
+            'region'    => env('VOS_REGION_NAME', 'RegionOne'),
+            'user'      => env('VOS_USERNAME', 'video'),
+            'domain'    => env('VOS_USER_DOMAIN_NAME', 'default'),
+            'password'  => env('VOS_PASSWORD', 'x43oP19m77gY'),
+            'container' => env('VOS_CONTAINER_NAME', 'videos'),
+            'projectId' => env('VOS_PROJECT_ID','5ef61f52cc2c48b2b1f0948de0c8773b')
+        ],
+
+        'chat_storage' => [
+            'driver' => 'swift',
+            'authUrl'   => env('CS_AUTH_URL', 'http://172.29.11.152:5000/v3'),
+            'region'    => env('CS_REGION_NAME', 'RegionOne'),
+            'user'      => env('CS_USERNAME', 'video'),
+            'domain'    => env('CS_USER_DOMAIN_NAME', 'default'),
+            'password'  => env('CS_PASSWORD', 'x43oP19m77gY'),
+            'container' => env('CS_CONTAINER_NAME', 'chat'),
+            'projectId' => env('CS_PROJECT_ID','5ef61f52cc2c48b2b1f0948de0c8773b')
+        ],
+
+        'public_user' => [
+            'driver' => 'swift',
+            'authUrl'   => env('PUB_AUTH_URL', 'http://172.29.11.152:5000/v3'),
+            'region'    => env('PUB_REGION_NAME', 'RegionOne'),
+            'user'      => env('PUB_USERNAME', 'video'),
+            'domain'    => env('PUB_USER_DOMAIN_NAME', 'default'),
+            'password'  => env('PUB_PASSWORD', 'x43oP19m77gY'),
+            'container' => env('PUB_CONTAINER_NAME', 'public_user'),
+            'projectId' => env('PUB_PROJECT_ID','5ef61f52cc2c48b2b1f0948de0c8773b'),
         ],
 
     ],
