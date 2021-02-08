@@ -16,6 +16,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::apiResource('/docs',Api\Documents::class);
 
 
+
+Route::group(['prefix' => 'file', 'middleware' => ['auth:api']], function () {
+    Route::post('upload', 'ApiFileSwiftTesting@uploadFiles');
+    Route::get('download', 'ApiFileSwiftTesting@getFileDataBase64Encode');
+    Route::delete('delete', 'ApiFileSwiftTesting@deleteFiles');
+    Route::get('/current-user-files', 'ApiFileSwiftTesting@getFilesCurrentUser');
+});
+
+
+
 /**
  * Список объектов текущего бакета(контейнера)
  */

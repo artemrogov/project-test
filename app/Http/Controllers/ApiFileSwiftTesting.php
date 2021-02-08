@@ -42,6 +42,10 @@ class ApiFileSwiftTesting extends Controller
 
             $files = $request->file('files');
 
+            if(!is_array($files)){
+                throw new \Exception("no array data");
+            }
+
             $zone = $this->getZoneStorageFiles($request->has('zone') ? $request->input('zone') : 'swift');
 
             if (is_null($files)) {
@@ -57,7 +61,7 @@ class ApiFileSwiftTesting extends Controller
                 $fileUploadData = $file->store("users/user-{$userId}", $zone);
 
                 $existsFile = Storage::disk($zone)->exists($fileUploadData);
-
+                
                 if ($existsFile) {
                     $dataPath[] = [
                         'path_hash' => $fileUploadData,
@@ -162,7 +166,7 @@ class ApiFileSwiftTesting extends Controller
         $db_row_delete = $deletedObjects->where('deleted', true)->values()->pluck('path_hash')->toArray();
 
         if (count($db_row_delete) > 0) {
-            DB::connection('zhps')->table('s3_storage_files')->whereIn('path_hash', $db_row_delete)->delete();
+            DB::table('s3_storage_files')->whereIn('path_hash', $db_row_delete)->delete();
         }
 
         return response()->json([

@@ -74,7 +74,7 @@ return [
             'user'      => env('OS_USERNAME', 'admin'),
             'domain'    => env('OS_USER_DOMAIN_NAME', 'default'),
             'password'  => env('OS_PASSWORD', 'xE777succ89-0'),
-            'container' => env('OS_CONTAINER_NAME', 'test_documents'),
+            'container' => env('OS_CONTAINER_NAME', 'test_upload_files'),
             'projectId'=>env('PROJECT_ID','47ee094a26b8437fab3f738fce82e2b4')
         ],
 
