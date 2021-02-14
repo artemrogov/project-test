@@ -61,7 +61,7 @@ class ApiFileSwiftTesting extends Controller
                 $fileUploadData = $file->store("users/user-{$userId}", $zone);
 
                 $existsFile = Storage::disk($zone)->exists($fileUploadData);
-                
+
                 if ($existsFile) {
                     $dataPath[] = [
                         'path_hash' => $fileUploadData,

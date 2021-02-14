@@ -34,6 +34,10 @@ class RouteServiceProvider extends ServiceProvider
 
     protected $namespace2 = 'App\\Http\\Pages';
 
+    protected $namespace_cms = 'App\\CMS\\Http';
+
+    protected $namespace_api_cms = 'App\\CMS\\API';
+
     /**
      * Define your route model bindings, pattern filters, etc.
      *
@@ -59,6 +63,21 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->namespace($this->namespace2)
                 ->group(base_path('routes/test.php'));
+
+            /**
+             * CMS Routing
+             */
+            Route::middleware('web')
+                ->namespace($this->namespace_cms)
+                ->group(base_path('app/CMS/routes/routes_admin.php'));
+
+            /**
+             * CMS API Routing
+             */
+            Route::middleware('api')
+                ->namespace($this->namespace_api_cms)
+                ->group(base_path('app/CMS/api_routes/base_api_router.php'));
+
         });
 
 
