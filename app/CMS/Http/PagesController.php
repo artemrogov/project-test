@@ -2,7 +2,8 @@
 
 namespace App\CMS\Http;
 
-use App\Models\User;
+use App\CMS\UsersService;
+use App\Exceptions\ExceptionUserNotFound;
 
 class PagesController extends BaseAdminController
 {
@@ -23,11 +24,14 @@ class PagesController extends BaseAdminController
 
     public function users($id)
     {
-        $user =  User::find($id);
+        try {
 
-        if(is_null($user)){
-            return 'Object user not found!';
+            $user = (new UsersService())->userById($id);
+
+        }catch (ExceptionUserNotFound $userError){
+            return view('exception',compact('userError'));
         }
+
         return response()->view('user',compact('user'))
             ->header('Content-Type','text/xml');
     }
