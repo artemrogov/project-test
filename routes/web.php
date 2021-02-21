@@ -26,3 +26,26 @@ Route::get('/documents-page',[\App\Http\Controllers\DocumentsController::class,'
 
 Route::get('/documents-dump',[\App\Http\Controllers\DocumentsController::class,'dumpDocuments'])
     ->name('documents.dump.casts');
+
+
+Route::get('/test-q',function (){
+
+    $user = \App\Models\User::first();
+
+    /*dispatch(function(){
+      logger('Hello first queue');
+    })->delay(now()->addMinutes(1));*/
+
+    //throw new Exception("test!");
+
+    //dispatch(new \App\Jobs\LearnJobQueue($user))->onQueue('users_test');
+
+    //$p = 17;
+    //\App\Jobs\LearnJobQueue::dispatchIf($p > 11,$user)->onQueue('users');
+
+    //\App\Jobs\LearnJobQueue::dispatch($user)->onQueue('user');
+
+    \App\Jobs\TestJob1::dispatch()->onQueue('test_job1');
+
+    return "ok";
+});
