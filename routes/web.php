@@ -41,11 +41,28 @@ Route::get('/test-q',function (){
     //dispatch(new \App\Jobs\LearnJobQueue($user))->onQueue('users_test');
 
     //$p = 17;
+
     //\App\Jobs\LearnJobQueue::dispatchIf($p > 11,$user)->onQueue('users');
 
     //\App\Jobs\LearnJobQueue::dispatch($user)->onQueue('user');
 
+    //throw new \Exception("error test!");
+
     \App\Jobs\TestJob1::dispatch()->onQueue('test_job1');
 
     return "ok";
+});
+
+Route::get('/pipeline',function (){
+
+   $pipeline = app(\Illuminate\Pipeline\Pipeline::class);
+
+   $pipeline->send('hello world!')->through(
+    []
+   )->then(function ($string){
+       dump($string);
+   });
+
+   return "ok pipeline!";
+
 });

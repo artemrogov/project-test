@@ -31,6 +31,19 @@ class TestJob1 implements ShouldQueue
      */
     public function handle()
     {
+
+
+        $test = false;
+
+        if($this->attempts() > 1){
+            Log::warning('количество попыток поднять очередь: '.$this->attempts());
+        }
+
+        if($test){
+            $this->release(1);
+            Log::info('Условия возвращения задания в очередь!');
+        }
+
         Log::info('running Test job 1');
     }
 }
