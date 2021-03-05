@@ -2,7 +2,7 @@
 
 #### Изученные материалы: 
 
-1) (Библиотека для архивирования файлов)[https://github.com/Ne-Lexa/php-zip#Documentation-ZipFile-saveAsFile]
+1) [Библиотека для архивирования файлов](https://github.com/Ne-Lexa/php-zip#Documentation-ZipFile-saveAsFile)
 
 2) Сервис провайдер(контейнеры) фреймворка Laravel 
 
@@ -18,9 +18,9 @@
 
 8) Генерация PDF 
 
-9) Конвектор изображений из png в jpg
+9) Конвектор изображений
 
-10) Интеграция с Elasticsearch полнотекстовый поиск (Простая интеграция)[https://laravel.demiart.ru/configuring-elasticsearch-in-laravel/]
+10) [Интеграция с Elasticsearch полнотекстовый поиск (Простая интеграция)](https://laravel.demiart.ru/configuring-elasticsearch-in-laravel/)
 
 11) Преобразование атрибутов casting. Создание своих кастомных Типов.
 
@@ -32,7 +32,7 @@
 
 15) Работа с колекциями 
 
-16) Коллекции Eloquent.
+16) Коллекции Eloquent:
 - Серилизация eloquent
 - сокрытие атрибутов json 
 - Связи. Полиморфная связь. На примере избранного меню для административной панели.
@@ -42,7 +42,6 @@
 18) Оповещения и email. Оповещение пользователей через Бд и почту.
 
 19) Сокеты broadcasting. Простой месседжер.
-
 
 Openstack Swift - команда загрузки и распаковка архива в бакете: 
 
