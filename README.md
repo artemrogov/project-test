@@ -1,10 +1,8 @@
-#Проект стенд "Управление документами"
+## Проект стенд "Управление документами"
 
-# Изученные материалы 
+#### Изученные материалы: 
 
-1) Библиотека для архивирования файлов
-
-https://github.com/Ne-Lexa/php-zip#Documentation-ZipFile-saveAsFile
+1) (Библиотека для архивирования файлов)[https://github.com/Ne-Lexa/php-zip#Documentation-ZipFile-saveAsFile]
 
 2) Сервис провайдер(контейнеры) фреймворка Laravel 
 
@@ -22,8 +20,7 @@ https://github.com/Ne-Lexa/php-zip#Documentation-ZipFile-saveAsFile
 
 9) Конвектор изображений из png в jpg
 
-10) Интеграция с Elasticsearch Полнотекстовый поиск(Простая интеграция)
-(https://laravel.demiart.ru/configuring-elasticsearch-in-laravel/)
+10) Интеграция с Elasticsearch полнотекстовый поиск (Простая интеграция)[https://laravel.demiart.ru/configuring-elasticsearch-in-laravel/]
 
 11) Преобразование атрибутов casting. Создание своих кастомных Типов.
 
@@ -46,20 +43,9 @@ https://github.com/Ne-Lexa/php-zip#Documentation-ZipFile-saveAsFile
 
 19) Сокеты broadcasting. Простой месседжер.
 
-##Команды для работы с архиватором
 
-#создать архив:
-
- ```
-tar -cvf archive.tar.gz 
-
-```
+Openstack Swift - команда загрузки и распаковка архива в бакете: 
 
 ```
 curl -X PUT http://172.29.11.152:8080/v1/AUTH_47ee094a26b8437fab3f738fce82e2b4/users/$?extract-archive=tar -T backup.tar -H "Content-Type: application/x-tar" -H "X-Detect-Content-Type: true" 
-
 ```
-
-
-
-
