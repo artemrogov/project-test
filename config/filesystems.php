@@ -56,6 +56,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'countries_flag_local' => [
+            'driver' => 'local',
+            'root' => base_path('database/countries/Flags'),
+            'url' => base_path('database/countries/Flags'),
+            'visibility' => 'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
@@ -109,6 +116,18 @@ return [
             'password'  => env('PUB_PASSWORD', 'x43oP19m77gY'),
             'container' => env('PUB_CONTAINER_NAME', 'public_user'),
             'projectId' => env('PUB_PROJECT_ID','5ef61f52cc2c48b2b1f0948de0c8773b'),
+        ],
+
+
+        'public_user_test' => [
+            'driver' => 'swift',
+            'authUrl'   => env('PUBT_AUTH_URL', 'http://172.29.11.152:5000/v3'),
+            'region'    => env('PUBT_REGION_NAME', 'RegionOne'),
+            'user'      => env('PUBT_USERNAME', 'video'),
+            'domain'    => env('PUBT_USER_DOMAIN_NAME', 'default'),
+            'password'  => env('PUBT_PASSWORD', 'x43oP19m77gY'),
+            'container' => env('PUBT_CONTAINER_NAME', 'flags_test'),
+            'projectId' => env('PUBT_PROJECT_ID','5ef61f52cc2c48b2b1f0948de0c8773b'),
         ],
 
     ],

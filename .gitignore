@@ -5,6 +5,7 @@
 /public/storage
 /storage/*.key
 /vendor
+/database/countries/Flags/*.png
 .env
 .env.backup
 .phpunit.result.cache
