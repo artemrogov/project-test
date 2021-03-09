@@ -66,3 +66,25 @@ Route::get('/pipeline',function (){
    return "ok pipeline!";
 
 });
+function test(){
+    yield 1;
+    yield 2;
+    yield 3;
+}
+
+
+
+Route::get('/gen-test',function(){
+    $result = test();
+
+    //dd($result->current());
+    //dump(iterator_to_array($result));
+    /*
+    $result->current();
+    $result->next();
+    $result->current();
+    $result->next();
+    dd($result->current());
+    */
+
+});

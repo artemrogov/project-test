@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Casts\CustomeCastAttributes;
 use App\Casts\DateCasting;
+use App\Casts\TestValueAttr;
 use App\Contracts\Searchable;
 
 use Carbon\Carbon;
@@ -24,9 +25,17 @@ class Document extends Model
         'start_publish'=>'datetime:Y-m-d H:i:s',
         'end_publish'=>'datetime:Y-m-d H:i:s',
         'active'=>'boolean',
-        'test_cast'=>CustomeCastAttributes::class
+        'test_cast'=>CustomeCastAttributes::class,
+        'value_test'=>TestValueAttr::class
     ];
 
+    protected $attributes = [
+        'value_test'
+    ];
+
+    protected $appends = [
+        'value_test'
+    ];
 
     protected $fillable = [
         'title',
@@ -35,12 +44,32 @@ class Document extends Model
         'content',
         'active',
         'author',
+        'value_test',
         'test_cast',
         'end_publish',
         'updated_at',
         'created_at'
     ];
 
+
+
+
+
+
+    public function testM(){
+        return $this->hasOne(Test::class,'document_id');
+    }
+
+    public function getValueTestAttribute()
+    {
+        return $this->testM->test_value;
+    }
+
+    public function setValueTestAttribute($value)
+    {
+        $this->attributes['value_test'] = $this->testM()
+            ->updateOrCreate(['document_id' => $this->id],['test_value'=>$value]);
+    }
 
     public function getTitleAuthorAttribute()
     {
